@@ -11,7 +11,7 @@ latitude - Only integers
 longitude - Only integers
 cabColour - Ex - 1 is for pink color
 
-If cab is available it will book cab and it will return the cab id. Cab Id is our reference for to end the ride. 
+If cab is available it will book cab and it will return the cab id. Cab Id is for our reference  to end the ride. 
 
 2. http://localhost:8080/TUber/cabBooking/endCab?cabId=x1y201&latitude=26&longitude=-20
 
