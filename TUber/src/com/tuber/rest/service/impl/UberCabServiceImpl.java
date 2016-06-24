@@ -34,16 +34,6 @@ public class UberCabServiceImpl implements UberCabService{
 		return CabAvail.isAnyCabAvaliable();
 	}
 	
-	
-	public static void main(String[] args) {
-		UberCabServiceImpl cab = new UberCabServiceImpl();
-		CustomerDto customerDto = new CustomerDto("st",11 , 2, 1,null,null);
-		String cabId = cab.checkCabAvailabiltyByNearestLocation(customerDto);
-		System.out.println(cabId);
-		System.out.println(CabAvail.getCabStatus(cabId));
-		cab.bookCab(cabId, customerDto);
-		System.out.println(CabAvail.getCabStatus(cabId));
-	}
 
 	@Override
 	public boolean bookCab(String cabId, CustomerDto customerDto) {
